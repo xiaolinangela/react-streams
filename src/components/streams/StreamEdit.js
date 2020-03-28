@@ -9,8 +9,8 @@ class StreamEdit extends Component {
     this.props.fetchStream(this.props.streamId);
   }
 
-  onSumbit = formValues => {
-    this.props.editStream(this.props.match.params.id, formValues);
+  onSumbit = (formValues, streamId) => {
+    this.props.editStream(streamId, formValues);
   };
 
   render() {
